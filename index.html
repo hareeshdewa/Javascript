@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bookspace</title>
+        <link rel = "stylesheet" href = "style.css">
+
+    </head>
+    <body>
+        <div class ="navbar">
+            <h1>Bookspace</h1>
+        </div>
+
+        <div class = "container">
+            <div class = "book-container">
+                <h2>The Models</h2>
+                <h5>Mark Manson</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, corporis eum delectus hic eveniet accusamus nesciunt perferendis ipsum aspernatur perspiciatis sequi eos, rerum voluptas exercitationem 
+                    beatae assumenda ipsam at soluta!</p>
+                <button onclick="deletebutton(event)">Delete</button>
+            </div>
+        </div>
+
+        <div class = "popup-overlay"></div>
+        <div class = "popup-box">
+            <h2>Add Book</h2>
+            <form>
+
+                <input type = "text" placeholder ="Book Name" id = "bname">
+                <input type = "text" placeholder="Book Author" id = "bauthor">
+                <textarea placeholder="Short Descritption" id = "bdescription"></textarea>
+                <button id="add-button">Add</button>
+                <button id="cancel-button">Cancel</button>
+
+            </form>
+        </div>
+        <button class = "addbutton" id = "plusbutton">+</button>
+        <script src= "script.js"></script>
+
+    </body>
+</html>
